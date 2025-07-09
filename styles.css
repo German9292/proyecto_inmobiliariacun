@@ -1,0 +1,182 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2D0140;
+    background: url('fondo2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+/* Encabezado */
+header {
+    background-color: #460273;
+    padding: 20px 40px;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+   
+}
+
+nav a:hover {
+    background-color: #ae6ee2;
+    color: #fff;
+}
+
+/* Secciones */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.fondo-nosotros {
+
+    min-height: 30vh; /* Cada sección ocupa al menos el 100% de la altura de la ventana. */
+    padding: 60px 20px; /* Espaciado interno para el contenido. */
+    text-align: center; /* Centra el texto. */
+    /*background-color: rgba(86, 34, 145, 0.6); /* Fondo semitransparente para legibilidad. */
+    background: url('section1.jpg') no-repeat center center fixed;
+    background-size: 1800px 720px ;
+    opacity: 1.5; /* 50% de opacidad */
+   /* filter: alpha(opacity=50); /* Compatibilidad IE8 y anteriores */
+    margin-bottom: 20px; /* Espaciado entre secciones. */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    padding: 60px 20px;
+    height: 100%; /* Ajusta automáticamente la altura para mantener la proporción. */
+}   
+
+section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Imágenes */
+.fondo-inmuebles  {
+    min-height: 30vh; /* Cada sección ocupa al menos el 100% de la altura de la ventana. */
+    padding: 60px 20px; /* Espaciado interno para el contenido. */
+    text-align: center; /* Centra el texto. */
+    /*background-color: rgba(86, 34, 145, 0.6); /* Fondo semitransparente para legibilidad. */
+    background: url('section2.jpg') no-repeat center center fixed;
+    background-size: 1800px 720px ;
+    opacity: 1.5; /* 50% de opacidad */
+   /* filter: alpha(opacity=50); /* Compatibilidad IE8 y anteriores */
+    margin-bottom: 20px; /* Espaciado entre secciones. */
+}
+
+.flex-container {
+    display: flex; /* Activa el modo Flexbox */
+    /*justify-content: space-around; /* Espacia uniformemente los elementos */
+    flex-direction: column;
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a varias líneas */
+    gap: 20px; /* Espaciado entre los elementos */
+    padding: 20px; /* Espaciado interno del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    
+}
+
+/* Formulario */
+.form-container {
+    background-color: #460273;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #9305F2;
+}
+
+button {
+    background-color: #9305F2;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6503A6;
+}
+
+/* Footer */
+footer {
+    background-color: #2D0140;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9em;
+    border-top: 2px solid #9305F2;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+footer nav ul li {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #9305F2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
